@@ -1,0 +1,100 @@
+.container {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 32px;
+}
+
+.pageTitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.pageSubtitle {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.settingsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.settingSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.sectionIcon {
+    color: #2563eb;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.settingItem {
+    display: flex;
+    align-items: center;
+}
+
+.settingLabel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #0f172a;
+    cursor: pointer;
+}
+
+.settingLabel input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formGroup label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #334155;
+}
+
+.select {
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #0f172a;
+    background: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+}

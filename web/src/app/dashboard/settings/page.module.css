@@ -1,0 +1,116 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pageTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-xl);
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.sectionTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-divider);
+}
+
+.profileHeader {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.avatar {
+    width: 64px;
+    height: 64px;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.userName {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-text-primary);
+}
+
+.userEmail {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
+.verifiedBadge {
+    color: var(--color-success);
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.formGroup {
+    margin-bottom: var(--spacing-md);
+}
+
+.formGroup label {
+    display: block;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    margin-bottom: 4px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-small);
+    background: var(--color-gray-50);
+    color: var(--color-text-primary);
+}
+
+.settingItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--color-divider);
+}
+
+.settingItem:last-child {
+    border-bottom: none;
+}
+
+.settingLabel {
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: 2px;
+}
+
+.settingDesc {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+}
+
+.toggle {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    background: var(--color-gray-100);
+    border-radius: 4px;
+    color: var(--color-text-secondary);
+}

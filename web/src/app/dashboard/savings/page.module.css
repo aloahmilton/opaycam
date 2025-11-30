@@ -1,0 +1,137 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.pageTitle {
+    font-size: 28px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.pageSubtitle {
+    color: var(--color-text-secondary);
+}
+
+.overview {
+    margin-bottom: var(--spacing-xl);
+}
+
+.totalCard {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-secondary);
+}
+
+.totalLabel {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.totalAmount {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.totalInterest {
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.goalsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.goalCard {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+}
+
+.goalIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.goalInfo {
+    flex: 1;
+}
+
+.goalName {
+    font-weight: bold;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.progressBar {
+    height: 8px;
+    background: var(--color-gray-100);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: var(--color-success);
+    border-radius: 4px;
+}
+
+.progressText {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--color-text-secondary);
+}
+
+.addGoal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--color-border);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-height: 140px;
+}
+
+.addGoal:hover {
+    border-color: var(--color-primary);
+    background: rgba(255, 193, 7, 0.05);
+}
+
+.addIcon {
+    font-size: 32px;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+}

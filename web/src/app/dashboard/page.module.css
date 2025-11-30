@@ -1,0 +1,347 @@
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: var(--spacing-md);
+}
+
+.spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid var(--color-gray-300);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.dashboard {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+.header {
+    margin-bottom: var(--spacing-xl);
+}
+
+.title {
+    font-size: 32px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.subtitle {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-body);
+}
+
+/* Balance Card */
+.balanceCard {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
+    color: var(--color-white);
+    margin-bottom: var(--spacing-xl);
+    position: relative;
+    overflow: hidden;
+}
+
+.balanceCard::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 193, 7, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.balanceHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.balanceLabel {
+    font-size: var(--font-size-body-small);
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.eyeBtn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.2s ease;
+}
+
+.eyeBtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.balanceAmount {
+    font-size: 48px;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-lg);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.balanceFooter {
+    display: flex;
+    gap: var(--spacing-xl);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.balanceStat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.balanceStatLabel {
+    font-size: var(--font-size-caption);
+    opacity: 0.8;
+}
+
+.balanceStatValue {
+    font-size: var(--font-size-body-large);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Quick Actions */
+.quickActions {
+    margin-bottom: var(--spacing-xl);
+}
+
+.sectionTitle {
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.actionsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.actionsGrid a {
+    text-decoration: none;
+}
+
+.actionCard {
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.actionCard:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-4px);
+}
+
+.actionIcon {
+    font-size: 40px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.actionLabel {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+}
+
+/* Stats Grid */
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.statCard {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.statIcon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    border-radius: var(--border-radius-medium);
+    font-size: 28px;
+}
+
+.statInfo {
+    flex: 1;
+}
+
+.statValue {
+    font-size: 24px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-xxs);
+}
+
+.statLabel {
+    font-size: var(--font-size-body-small);
+    color: var(--color-text-secondary);
+}
+
+/* Transactions */
+.transactionsSection {
+    margin-bottom: var(--spacing-xl);
+}
+
+.transactionsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.transactionsList {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--color-divider);
+    transition: background 0.2s ease;
+    cursor: pointer;
+}
+
+.transaction:last-child {
+    border-bottom: none;
+}
+
+.transaction:hover {
+    background: var(--color-gray-50);
+}
+
+.transactionIcon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-gray-100);
+    border-radius: var(--border-radius-medium);
+    font-size: 24px;
+}
+
+.transactionDetails {
+    flex: 1;
+    min-width: 0;
+}
+
+.transactionTitle {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xxs);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.transactionMeta {
+    font-size: var(--font-size-caption);
+    color: var(--color-text-secondary);
+}
+
+.transactionRight {
+    text-align: right;
+}
+
+.transactionAmount {
+    font-size: var(--font-size-body-large);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-xxs);
+}
+
+.transactionStatus {
+    font-size: var(--font-size-caption);
+    text-transform: capitalize;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .balanceAmount {
+        font-size: 36px;
+    }
+
+    .balanceFooter {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .actionsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .transaction {
+        padding: var(--spacing-md);
+    }
+
+    .transactionMeta {
+        font-size: 10px;
+    }
+}

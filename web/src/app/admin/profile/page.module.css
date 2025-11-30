@@ -1,0 +1,318 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.pageTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.lastLogin {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 24px;
+}
+
+/* Profile Card */
+.profileCard {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.profileHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.avatarLarge {
+    width: 96px;
+    height: 96px;
+    background: #3b82f6;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+}
+
+.adminName {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.roleBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #fef3c7;
+    color: #d97706;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.infoList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+}
+
+.infoIcon {
+    color: #94a3b8;
+}
+
+.infoContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 11px;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.value {
+    font-size: 14px;
+    color: #0f172a;
+    font-weight: 500;
+}
+
+/* Security Card */
+.cardTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.securityItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.securityItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.secInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.secTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.secDesc {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.toggleActive {
+    font-size: 11px;
+    font-weight: 700;
+    color: #16a34a;
+    background: #dcfce7;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Abilities Card */
+.cardDesc {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.abilitiesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.abilityGroup {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+}
+
+.abilityHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.abilityCategory {
+    font-size: 14px;
+    font-weight: 700;
+    color: #334155;
+}
+
+.accessLevel {
+    font-size: 10px;
+    font-weight: 700;
+    color: #3b82f6;
+    background: #eff6ff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.permissionList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.permissionItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+.checkIcon {
+    color: #16a34a;
+}
+
+/* Activity Log */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.timelineItem {
+    display: flex;
+    gap: 16px;
+}
+
+.timelineDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+.timelineDot.critical {
+    background: #ef4444;
+    box-shadow: 0 0 0 4px #fee2e2;
+}
+
+.timelineDot.warning {
+    background: #f59e0b;
+    box-shadow: 0 0 0 4px #fef3c7;
+}
+
+.timelineDot.info {
+    background: #3b82f6;
+    box-shadow: 0 0 0 4px #eff6ff;
+}
+
+.timelineContent {
+    flex: 1;
+}
+
+.logHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.logAction {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.logTime {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.logDetail {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.viewAllBtn {
+    margin-top: 16px;
+    color: #64748b;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .leftColumn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .leftColumn {
+        grid-template-columns: 1fr;
+    }
+}

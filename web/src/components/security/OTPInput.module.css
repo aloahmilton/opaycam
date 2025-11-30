@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.otpInputWrapper {
+    position: relative;
+}
+
+.otpInput {
+    width: 100%;
+    height: 64px;
+    font-size: 24px;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    letter-spacing: 8px;
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius-medium);
+    background: var(--color-surface);
+    color: var(--color-text-primary);
+    transition: all 0.2s ease;
+    font-family: 'Courier New', monospace;
+}
+
+.otpInput:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.2);
+}
+
+.otpInput::placeholder {
+    letter-spacing: normal;
+    font-size: var(--font-size-body);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular);
+}
+
+.otpInput.error {
+    border-color: var(--color-error);
+    animation: shake 0.3s;
+}
+
+.otpInput:disabled {
+    background: var(--color-gray-100);
+    cursor: not-allowed;
+}
+
+.errorText {
+    color: var(--color-error);
+    font-size: var(--font-size-body-small);
+    text-align: center;
+    animation: fadeIn 0.3s;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.timer {
+    font-size: var(--font-size-body-small);
+    color: var(--color-text-secondary);
+    text-align: center;
+}
+
+.timeValue {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    font-size: var(--font-size-body);
+}
+
+.expired {
+    font-size: var(--font-size-body-small);
+    color: var(--color-error);
+    font-weight: var(--font-weight-semibold);
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-8px);
+    }
+
+    75% {
+        transform: translateX(8px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .otpInput {
+        height: 56px;
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+}

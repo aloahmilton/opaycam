@@ -1,0 +1,279 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+}
+
+.pageTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.pageSubtitle {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.headerActions {
+    display: flex;
+    gap: 12px;
+}
+
+/* Solvency Overview */
+.overviewGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.solvencyCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.cardTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.badge {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.badge.success {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.solvencyMetrics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.metric {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.metricLabel {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.metricValue {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.metricValue.positive {
+    color: #16a34a;
+}
+
+.metricSub {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.divider {
+    width: 1px;
+    height: 60px;
+    background: #e2e8f0;
+    margin: 0 24px;
+}
+
+/* Provider Grid */
+.providerGrid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.providerCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.providerHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.providerIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.providerName {
+    font-weight: 600;
+    font-size: 14px;
+    color: #334155;
+}
+
+.providerBalance {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+    padding-left: 44px;
+}
+
+.providerStatus {
+    padding-left: 44px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.progressBar {
+    flex: 1;
+    height: 6px;
+    background: #f1f5f9;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    border-radius: 3px;
+}
+
+.statusText {
+    font-size: 11px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Charts Row */
+.chartsRow {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.chartContainer {
+    height: 300px;
+    width: 100%;
+}
+
+/* Actions List */
+.actionList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.actionItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.actionItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.actionIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actionIcon.blue {
+    background: #eff6ff;
+    color: #3b82f6;
+}
+
+.actionIcon.green {
+    background: #f0fdf4;
+    color: #16a34a;
+}
+
+.actionIcon.orange {
+    background: #fff7ed;
+    color: #f97316;
+}
+
+.actionContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.actionTitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.actionTime {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+.actionAmount {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.actionStatus {
+    font-size: 11px;
+    font-weight: 600;
+    color: #16a34a;
+    background: #dcfce7;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+
+    .overviewGrid,
+    .chartsRow {
+        grid-template-columns: 1fr;
+    }
+
+    .providerGrid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: auto;
+    }
+}

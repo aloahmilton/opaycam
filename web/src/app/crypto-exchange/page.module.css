@@ -1,0 +1,232 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #64748b;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    gap: 8px;
+    background: #f1f5f9;
+    padding: 4px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px 24px;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tab:hover {
+    background: rgba(37, 99, 235, 0.1);
+}
+
+.tabActive {
+    background: #2563eb !important;
+    color: white !important;
+}
+
+.inputGroup {
+    margin-bottom: 24px;
+}
+
+.label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 8px;
+}
+
+.currencySymbol {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-right: 12px;
+}
+
+.input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    background: transparent;
+}
+
+.input::placeholder {
+    color: #cbd5e1;
+}
+
+.select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1e293b;
+    cursor: pointer;
+    background: white;
+    transition: border-color 0.2s;
+}
+
+.select:hover,
+.select:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+.estimate {
+    background: rgba(37, 99, 235, 0.1);
+    border-left: 4px solid #2563eb;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.estimateRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #1e293b;
+}
+
+.estimateRow strong {
+    font-size: 20px;
+    color: #2563eb;
+}
+
+.estimateNote {
+    font-size: 12px;
+    color: #64748b;
+    margin: 0;
+}
+
+.continueBtn {
+    width: 100%;
+    padding: 16px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
+}
+
+.continueBtn:hover:not(:disabled) {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px -1px rgba(37, 99, 235, 0.4);
+}
+
+.continueBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.info {
+    margin-top: 24px;
+    padding: 16px;
+    background: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #92400e;
+}
+
+.popularSection {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 16px;
+}
+
+.cryptoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.cryptoCard {
+    padding: 16px;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.cryptoCard:hover {
+    border-color: #2563eb;
+    background: rgba(37, 99, 235, 0.05);
+}
+
+.cryptoCardActive {
+    border-color: #2563eb;
+    background: rgba(37, 99, 235, 0.1);
+}
+
+.cryptoIcon {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.cryptoName {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+}

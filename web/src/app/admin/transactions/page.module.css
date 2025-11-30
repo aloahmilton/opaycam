@@ -1,0 +1,180 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: var(--spacing-lg);
+}
+
+.pageTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+
+.headerStats {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.statLabel {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+}
+
+.statValue {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.controlsCard {
+    margin-bottom: var(--spacing-lg);
+}
+
+.controls {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.searchInput {
+    flex: 2;
+    padding: 10px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-small);
+    font-family: var(--font-family);
+}
+
+.filterSelect {
+    flex: 1;
+    padding: 10px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-small);
+    background: white;
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+
+.exportBtn {
+    padding: 10px 20px;
+    background: var(--color-secondary);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.tableCard {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table th {
+    padding: 16px;
+    background: var(--color-gray-50);
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 1px solid var(--color-divider);
+}
+
+.table td {
+    padding: 16px;
+    border-bottom: 1px solid var(--color-divider);
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.txnId {
+    font-family: 'Courier New', monospace;
+    color: var(--color-text-secondary);
+}
+
+.user {
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.amount {
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.date {
+    color: var(--color-text-secondary);
+    font-size: 13px;
+}
+
+.statusBadge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.statusBadge.completed {
+    background: rgba(40, 167, 69, 0.1);
+    color: var(--color-success);
+}
+
+.statusBadge.pending {
+    background: rgba(255, 193, 7, 0.1);
+    color: #856404;
+}
+
+.statusBadge.failed {
+    background: rgba(220, 53, 69, 0.1);
+    color: var(--color-error);
+}
+
+.riskBadge {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.riskBadge.low {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.riskBadge.medium {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+.riskBadge.high {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.actionBtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--color-text-secondary);
+}

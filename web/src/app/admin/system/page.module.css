@@ -1,0 +1,227 @@
+.container {
+    padding: 24px;
+}
+
+.header {
+    margin-bottom: 32px;
+}
+
+.pageTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 4px 0;
+}
+
+.pageSubtitle {
+    color: #64748b;
+    margin: 0;
+}
+
+.statusCard {
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #004F71 0%, #003853 100%);
+    color: white;
+}
+
+.statusHeader {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.statusIcon {
+    color: #4ade80;
+}
+
+.statusTitle {
+    margin: 0 0 4px 0;
+    font-size: 20px;
+}
+
+.statusDesc {
+    margin: 0;
+    opacity: 0.9;
+}
+
+.metricsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.metricCard {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.metricIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.metricIcon.good {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.metricIcon.warning {
+    background-color: #ffedd5;
+    color: #9a3412;
+}
+
+.metricLabel {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 2px;
+}
+
+.metricValue {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0 0 20px 0;
+}
+
+.eventsList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.eventItem {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.eventItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.eventIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.eventIcon.info {
+    background-color: #e0f2fe;
+    color: #0284c7;
+}
+
+.eventIcon.warning {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.eventMessage {
+    font-size: 14px;
+    color: #334155;
+    margin-bottom: 2px;
+}
+
+.eventTime {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+/* Automation Toggles */
+.automationCard {
+    margin-bottom: 24px;
+}
+
+.togglesList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.toggleItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.toggleItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.toggleLabel {
+    margin: 0 0 4px 0;
+    font-size: 15px;
+    color: #1e293b;
+}
+
+.toggleDesc {
+    margin: 0;
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* Switch Component */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #004F71;
+}
+
+input:checked+.slider:before {
+    transform: translateX(24px);
+}

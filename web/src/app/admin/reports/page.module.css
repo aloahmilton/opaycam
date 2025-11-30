@@ -1,0 +1,97 @@
+.container {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 32px;
+}
+
+.pageTitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.pageSubtitle {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.statCard {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.statIcon {
+    color: #2563eb;
+}
+
+.statValue {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.statLabel {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.reportsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.reportCard {
+    text-align: center;
+    cursor: pointer;
+}
+
+.reportIcon {
+    color: #2563eb;
+    margin-bottom: 16px;
+}
+
+.reportTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.reportDesc {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.downloadBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.downloadBtn:hover {
+    background: #1e40af;
+}

@@ -1,0 +1,212 @@
+.dashboard {
+    padding: 24px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.kpiCard {
+    transition: transform 0.2s;
+}
+
+.kpiCard:hover {
+    transform: translateY(-2px);
+}
+
+.kpiHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.iconBox {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconBox.blue {
+    background: #eff6ff;
+    color: #3b82f6;
+}
+
+.iconBox.green {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.iconBox.orange {
+    background: #ffedd5;
+    color: #f97316;
+}
+
+.iconBox.red {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge.success {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.badge.warning {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.kpiContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.kpiValue {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.kpiLabel {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.chartsGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.chartCard {
+    border: 1px solid #e2e8f0;
+}
+
+.chartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.chartAction {
+    font-size: 13px;
+    color: #3b82f6;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.chartContainer {
+    height: 300px;
+    width: 100%;
+}
+
+/* Activity Table */
+.activityCard {
+    border: 1px solid #e2e8f0;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table th {
+    padding: 16px;
+    background: #f8fafc;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table td {
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    font-size: 14px;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.eventType {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.userCell {
+    font-weight: 500;
+    color: #0f172a;
+}
+
+.timeCell {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.statusBadge {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.statusBadge.success {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.statusBadge.danger {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.statusBadge.info {
+    background: #e0f2fe;
+    color: #0284c7;
+}
+
+@media (max-width: 1024px) {
+    .chartsGrid {
+        grid-template-columns: 1fr;
+    }
+}

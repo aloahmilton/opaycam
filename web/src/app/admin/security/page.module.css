@@ -1,0 +1,266 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+}
+
+.pageTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.pageSubtitle {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.tabs {
+    display: flex;
+    gap: 12px;
+    background: #f1f5f9;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.tab.activeTab {
+    background: #fff;
+    color: #0f172a;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* KYC Section */
+.filterBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.searchBox input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.kycCard {
+    border: 1px solid #e2e8f0;
+}
+
+.kycHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.userAvatar {
+    width: 40px;
+    height: 40px;
+    background: #eff6ff;
+    color: #3b82f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.kycInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.kycUser {
+    font-weight: 600;
+    color: #0f172a;
+    font-size: 14px;
+}
+
+.kycType {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.riskBadge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.riskBadge.low {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.riskBadge.medium {
+    background: #fef9c3;
+    color: #ca8a04;
+}
+
+.riskBadge.high {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.kycMeta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.kycActions {
+    display: flex;
+    gap: 12px;
+}
+
+.actionRow {
+    display: flex;
+    gap: 8px;
+}
+
+.rejectBtn,
+.approveBtn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.rejectBtn {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.rejectBtn:hover {
+    background: #fecaca;
+}
+
+.approveBtn {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.approveBtn:hover {
+    background: #bbf7d0;
+}
+
+/* Fraud Table */
+.fraudTableCard {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table th {
+    padding: 16px;
+    background: #f8fafc;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table td {
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    font-size: 14px;
+}
+
+.mono {
+    font-family: monospace;
+    color: #64748b;
+}
+
+.userCell {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.riskTag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.riskTag.critical {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.riskTag.high {
+    background: #ffedd5;
+    color: #c2410c;
+}
+
+.riskTag.medium {
+    background: #fef9c3;
+    color: #ca8a04;
+}
+
+.detailCell {
+    color: #475569;
+}
+
+.timeCell {
+    color: #94a3b8;
+    font-size: 13px;
+}

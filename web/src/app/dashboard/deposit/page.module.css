@@ -1,0 +1,286 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pageTitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.pageSubtitle {
+    color: #64748b;
+    font-size: 16px;
+}
+
+.methodsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.methodCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.methodCard:hover {
+    border-color: #3b82f6;
+    transform: translateY(-4px);
+}
+
+.iconBox {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.iconBox.orange {
+    background: #fff7ed;
+    color: #f97316;
+}
+
+.iconBox.blue {
+    background: #eff6ff;
+    color: #3b82f6;
+}
+
+.methodTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.methodDesc {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #dcfce7;
+    color: #16a34a;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+/* Form Styles */
+.formCard {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.backBtn {
+    background: none;
+    border: none;
+    color: #64748b;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.stepTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 24px;
+}
+
+.formGroup {
+    margin-bottom: 24px;
+}
+
+.formGroup label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+/* Service Selection */
+.serviceGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.serviceBtn {
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #fff;
+    color: #64748b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.serviceBtn:hover {
+    border-color: #3b82f6;
+    color: #3b82f6;
+}
+
+.serviceBtn.active {
+    border-color: #3b82f6;
+    background: #eff6ff;
+    color: #3b82f6;
+}
+
+/* Summary */
+.summary {
+    background: #f8fafc;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.summaryRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.amount {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.value {
+    font-weight: 500;
+    color: #0f172a;
+}
+
+.divider {
+    height: 1px;
+    background: #e2e8f0;
+    margin: 12px 0;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.infoBox {
+    display: flex;
+    gap: 12px;
+    background: #eff6ff;
+    padding: 12px;
+    border-radius: 8px;
+    color: #1e40af;
+    font-size: 13px;
+    margin-bottom: 24px;
+    align-items: flex-start;
+}
+
+/* Processing State */
+.centerCard {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.spinner {
+    color: #3b82f6;
+    animation: spin 1s linear infinite;
+    margin-bottom: 24px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.processingTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.processingDesc {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Success */
+.successCard {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.successIcon {
+    width: 80px;
+    height: 80px;
+    background: #dcfce7;
+    color: #16a34a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+}
+
+.successTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.successDesc {
+    color: #64748b;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+
+.error {
+    color: #ef4444;
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-align: center;
+    background: #fee2e2;
+    padding: 10px;
+    border-radius: 6px;
+}
