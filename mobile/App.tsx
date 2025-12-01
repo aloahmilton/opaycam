@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { AppNavigator } from './src/navigation/AppNavigator';
 import { NotificationListener } from './src/components/NotificationListener';
+import { ErrorBoundary } from './src/components/ErrorBoundary';
 import * as Font from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { Ionicons } from '@expo/vector-icons';
@@ -56,14 +57,18 @@ export default function App() {
     return null;
   }
 
+
+
   return (
     <PubNubProvider client={pubnub}>
       <LanguageProvider>
         <ThemeProvider>
-          <NotificationListener />
-          <NavigationContainer>
-            <AppNavigator />
-          </NavigationContainer>
+          <ErrorBoundary>
+            <NotificationListener />
+            <NavigationContainer>
+              <AppNavigator />
+            </NavigationContainer>
+          </ErrorBoundary>
         </ThemeProvider>
       </LanguageProvider>
     </PubNubProvider>
