@@ -17,6 +17,7 @@ export const typography = {
         h1: 32,
         h2: 24,
         h3: 20,
+        h4: 18,
         bodyLarge: 18,
         body: 16,
         bodySmall: 14,
@@ -37,6 +38,7 @@ export const typography = {
         h1: 40,
         h2: 32,
         h3: 28,
+        h4: 26,
         bodyLarge: 26,
         body: 24,
         bodySmall: 20,
@@ -59,6 +61,11 @@ export const typography = {
         h3: {
             fontSize: 20,
             lineHeight: 28,
+            fontWeight: '600' as const,
+        },
+        h4: {
+            fontSize: 18,
+            lineHeight: 26,
             fontWeight: '600' as const,
         },
         bodyLarge: {

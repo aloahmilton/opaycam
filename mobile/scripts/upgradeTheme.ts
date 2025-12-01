@@ -1,5 +1,6 @@
 import * as fs from 'fs';
-import * as glob from 'glob';
+import { glob } from 'fs';
+
 
 const pattern = 'src/**/*.tsx';
 
@@ -71,12 +72,12 @@ function processFile(filePath: string) {
     content = replaceCreateStylesSignature(content);
     content = ensureImports(content);
     fs.writeFileSync(filePath, content, 'utf8');
-    console.log(`Processed ${filePath}`);
+    console.log(`Processed $filePath}`);
 }
 
-glob(pattern, {}, (err, files) => {
-    if (err) {
-        console.error('Glob error', err);
+glob(pattern, {}, (error, files) => {
+    if (error) {
+        console.error('Glob error', error);
         process.exit(1);
     }
     files.forEach(processFile);
